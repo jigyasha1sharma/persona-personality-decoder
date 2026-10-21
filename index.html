@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona | Discover Yourself</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <section class="welcome-screen" id="welcomeScreen">
+            <div class="logo">persona<span>.</span></div>
+
+            <div class="welcome-content">
+                <p class="eyebrow">A LITTLE JOURNEY INTO YOU</p>
+
+                <h1>Who are you<br>
+                    <span>beneath the surface?</span>
+                </h1>
+
+                <p class="intro">
+                    Answer a few fun questions, follow your instincts,
+                    and discover the personality that makes you unique.
+                </p>
+
+                <div class="quiz-info">
+                    <span>✦ 10 Questions</span>
+                    <span>◷ 2 Minutes</span>
+                    <span>♡ Just for Fun</span>
+                </div>
+
+                <button id="startBtn" class="primary-btn">
+                    Discover My Personality →
+                </button>
+
+                <p class="small-note">
+                    No right or wrong answers. Just be yourself.
+                </p>
+            </div>
+
+            <div class="decor decor-one">✳</div>
+            <div class="decor decor-two">✦</div>
+        </section>
+
+        <section class="quiz-screen hidden" id="quizScreen">
+
+            <header class="quiz-header">
+                <div class="logo">persona<span>.</span></div>
+                <p id="questionCounter">QUESTION 01 OF 10</p>
+            </header>
+
+            <div class="progress-track">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="question-content">
+                <p class="eyebrow">GO WITH YOUR GUT</p>
+
+                <h2 id="questionText">Your question goes here.</h2>
+
+                <div class="options" id="optionsContainer"></div>
+
+                <p class="small-note">
+                    Choose the answer that feels most like you.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="result-screen hidden" id="resultScreen">
+
+            <div class="logo">persona<span>.</span></div>
+
+            <p class="eyebrow">YOUR PERSONALITY REVEALED</p>
+
+            <div class="result-icon" id="resultIcon">🌙</div>
+
+            <p class="result-label">YOU ARE</p>
+
+            <h1 id="resultTitle">The Dreamer</h1>
+
+            <h3 id="resultSubtitle">Creative & Imaginative</h3>
+
+            <p class="result-description" id="resultDescription"></p>
+
+            <div class="traits" id="traitsContainer"></div>
+
+            <p class="result-disclaimer">
+                This result is for fun and self-reflection.
+                It doesn't define everything about you.
+            </p>
+
+            <div class="result-buttons">
+                <button id="retakeBtn" class="primary-btn">
+                    Take Again ↻
+                </button>
+
+                <button id="shareBtn" class="secondary-btn">
+                    Share My Result ↗
+                </button>
+            </div>
+
+        </section>
+
+        <footer>
+            Made with curiosity <span>♡</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
